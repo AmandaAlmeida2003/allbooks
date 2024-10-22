@@ -18,5 +18,8 @@ jobs:
       uses: actions/setup-node@v4
       with:
         node-version: 21.
+      
+    - name: Navigate to project directory
+      run: cd /home/devops/github/allbooks-aula-01
     - run: npm install
     - run: npm test
